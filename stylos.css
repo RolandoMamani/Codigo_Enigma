@@ -1,0 +1,88 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente básica y legible */
+    background-color: #0f0f0f; /* Fondo oscuro para un aspecto moderno */
+    color: #e0e0e0; /* Color del texto claro para contraste */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar relleno por defecto */
+    display: flex; /* Usar Flexbox para centrar contenido */
+    flex-direction: column; /* Organizar elementos en columna */
+    align-items: center; /* Alinear elementos horizontalmente al centro */
+    justify-content: center; /* Alinear elementos verticalmente al centro */
+    height: 100vh; /* Altura completa de la ventana de visualización */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+    color: #00ffcc; /* Color brillante para el título */
+}
+
+h2 {
+    font-size: 1.5rem; /* Tamaño de fuente mediano para los subtítulos */
+    margin: 1rem 0; /* Espacio arriba y abajo de los subtítulos */
+    color: #66ff66; /* Color verde brillante para los subtítulos */
+}
+
+textarea, input[type="password"] {
+    font-size: 1rem; /* Tamaño de fuente estándar para los campos de entrada */
+    padding: 0.5rem; /* Espacio interno para un mejor aspecto */
+    border-radius: 8px; /* Bordes redondeados para un aspecto suave */
+    border: 2px solid #00ffcc; /* Borde brillante para los campos de entrada */
+    background-color: #1a1a1a; /* Fondo oscuro para los campos de entrada */
+    color: #e0e0e0; /* Color del texto claro para contraste */
+    margin-bottom: 1rem; /* Espacio debajo de los campos de entrada */
+    width: 80%; /* Ancho del campo de entrada en relación con el contenedor */
+    max-width: 500px; /* Ancho máximo del campo de entrada */
+}
+
+textarea:focus, input[type="password"]:focus {
+    outline: none; /* Eliminar el contorno predeterminado */
+    border-color: #33ff99; /* Cambiar el color del borde al enfocar */
+    box-shadow: 0 0 10px rgba(51, 255, 153, 0.5); /* Agregar sombra alrededor del campo cuando está enfocado */
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex; /* Usar Flexbox para alinear los botones en línea */
+    gap: 1rem; /* Espacio entre los botones */
+    margin-bottom: 1rem; /* Espacio debajo del contenedor de botones */
+}
+
+/* Botones */
+button {
+    font-size: 1rem; /* Tamaño de fuente estándar para los botones */
+    color: #0f0f0f; /* Color del texto en los botones */
+    background-color: #00ffcc; /* Fondo brillante para los botones */
+    border: none; /* Eliminar el borde por defecto del botón */
+    border-radius: 8px; /* Bordes redondeados para un aspecto suave */
+    padding: 0.5rem 1.5rem; /* Espacio interno para el botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el color de fondo y la sombra */
+}
+
+button:hover {
+    background-color: #00cc99; /* Cambiar el color de fondo cuando se pasa el ratón */
+    box-shadow: 0 0 10px rgba(0, 204, 153, 0.5); /* Agregar sombra cuando se pasa el ratón */
+}
+
+button:active {
+    background-color: #009966; /* Cambiar el color de fondo cuando el botón está presionado */
+    box-shadow: 0 0 5px rgba(0, 153, 102, 0.5); /* Agregar sombra cuando el botón está presionado */
+}
+
+/* Resultados */
+#Texto_encriptado, #Texto_desencriptado {
+    font-size: 1rem; /* Tamaño de fuente estándar para el texto de resultados */
+    padding: 1rem; /* Espacio interno para el área de resultados */
+    border: 2px solid #00ffcc; /* Borde brillante para los resultados */
+    border-radius: 8px; /* Bordes redondeados para un aspecto suave */
+    background-color: #1a1a1a; /* Fondo oscuro para los resultados */
+    color: #e0e0e0; /* Color del texto claro para contraste */
+    margin-top: 0.5rem; /* Espacio arriba del área de resultados */
+    width: 80%; /* Ancho del área de resultados en relación con el contenedor */
+    max-width: 500px; /* Ancho máximo del área de resultados */
+    word-wrap: break-word; /* Asegura que el texto largo se ajuste al contenedor */
+    white-space: pre-wrap; /* Mantiene los espacios y saltos de línea del texto */
+}

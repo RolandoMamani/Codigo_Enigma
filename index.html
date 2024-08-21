@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Enigma</title>
+    <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+    <h1>Código Enigma</h1>
+    <textarea id="texto" placeholder="Escribe el texto aquí..."></textarea><br>
+    <input type="password" id="clave" placeholder="Escribe la clave aquí..."><br>
+    <div class="button-container"> <!-- Contenedor para los botones -->
+        <button type="button" onclick="encriptar()">Encriptar</button>
+        <button type="button" onclick="desencriptar()">Desencriptar</button>
+        <button type="button" onclick="limpiar()">Limpiar</button>
+    </div>
+    <h2>Texto Encriptado:</h2>
+    <p id="Texto_encriptado"></p>
+    <h2>Texto Desencriptado:</h2>
+    <p id="Texto_desencriptado"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
