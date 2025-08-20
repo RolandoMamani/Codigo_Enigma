@@ -58,3 +58,6 @@ function limpiar() {
     document.getElementById("Texto_encriptado").textContent = '';
     document.getElementById("Texto_desencriptado").textContent = '';
 }
+
+
+console.log("cambios nuevos");
